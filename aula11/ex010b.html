@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nascionalidade</title>
+</head>
+<body>
+  <h1>Nascionalidade</h1>
+  Em que país você mora? <input type="text" name="pais" id="pais">
+  <input type="button" value="carregar" onclick="upload()">
+  <div id="res">
+
+  </div>
+
+  <script>
+    function upload() {
+      var pais = window.document.querySelector('input#pais')
+      var res = window.document.querySelector('div#res')
+      res.innerHTML = `<p> Atualmente você em ${pais}!</p>`
+      if (pais == Brasil) {
+      res.innerHTML += `<p>Você é Brasileiro(a)!</p>`
+      } else {
+      res.innerHTML += `<p>Você é estrangeiro(a)!</p>`
+      }
+    }
+  </script>
+</body>
+</html>
