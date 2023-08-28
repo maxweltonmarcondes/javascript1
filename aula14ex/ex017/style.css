@@ -20,15 +20,6 @@ section {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.418);
 }
 
-div {
-  text-align: center;
-  padding: 5px;
-}
-
-div > img {
-  width: 450px;
-  
-}
 
 footer {
   color: white;
